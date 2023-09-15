@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins; 
+}
+
+button {
+    width: 210px;
+    height: 66px;
+    border: none;
+    cursor: pointer;
+    color: #663128;
+    border-radius: 57px;
+    background: #F3CE5E;
+    box-shadow: 0px 20px 40px 0px rgba(243, 206, 94, 0.20);
+    /* text */
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* header */
+header {
+    display: flex;
+    color: #663128;
+    background: #FEF4DE;
+    background-image: url(imagens/backgroundForms.svg);
+}
+
+header .box {
+    display: flex;
+    flex: 1; /* Faz com que ambas as divs ocupem o mesmo espaço disponível */
+    padding: 100px 40px; /* Adicione um espaçamento interno para as divs */
+    /* centralizando conteúdo no centro da viewport da div */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+header .box-content {
+    gap: 20px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .box-content h1 {
+    font-size: 110px; 
+    font-weight: 900; 
+    line-height: 50%; 
+}
+
+header .box-content h2 {
+    font-size: 60px;
+    font-weight: 700; 
+    letter-spacing: 22px; 
+}
+
+header .box-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+header button:nth-child(2) {
+    background-color: #66312800;
+    /* text */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+header .box img {
+    max-width: 400px;
+}
+
+/* serviços */
+main {
+    padding: 50px 0;
+    background-color: #7C4032;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h2 {
+    color: #FFF; 
+    font-size: 64px; 
+    font-weight: 900; 
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+main .grid {
+    display: grid;
+    width: 1200px; 
+    justify-items: center; /* centraliza o quadrado ao centro */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,85px);
+}
+
+main .item {
+    width: 288px;
+    height: 150px;
+    border-radius: 20px; 
+    background-color: white;
+    /* flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* depoimentos */
+section {
+    height: 796px; 
+    padding: 50px 0;
+    background: #FEF4DE;
+    background-image: url(imagens/backgroundForms.svg);
+}
+
+section h2 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #7C4032;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .grid {
+    display: grid;
+    width: 1200px; 
+    justify-items: center; /* centraliza o quadrado ao centro */
+    grid-template-rows: repeat(2,120px);
+    grid-template-columns: repeat(2,1fr);
+}
+
+section .item {
+    width: 512px;
+    height: 160px;
+    flex-shrink: 0;
+    text-align: left;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 30px;
+    border: 1px solid #7C4032;
+    /* flexbox */
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+section .item h2 {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: left;
+}
+
+section .item p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+section .star svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* contato */
+section.contato {
+    height: 504px;
+    background: #FFF;
+}
+
+section.contato .content {
+    gap: 200px;
+    flex: 1;
+    flex-direction: row;
+}
+
+form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 374px;
+    height: 56px;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 61px;
+    background: #E5AF99;
+}
+
+input[type=submit] {
+    width: 168px;
+    height: 56px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 61px;
+    background-color: white;
+    border: 3px solid #7C4032;
+}
+
+.contato-info {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 1903px;
+    height: 117px;
+    flex-shrink: 0;
+    background: #55352D;
+}

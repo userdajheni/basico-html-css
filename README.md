@@ -6,6 +6,7 @@ HTML significa Linguagem de Marcação de Hipertexto. Ele é usado no frontend e
 
 ## Projetos
 - [Bear Bears - site simples](https://userdajheni.github.io/estudos-html/projetos/projeto1/main.html)
+- [Challenge Codewell - site respondivo](https://userdajheni.github.io/estudos-html/projetos/projeto2/index.html)
 
 ## Referência
 

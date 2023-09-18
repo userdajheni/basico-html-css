@@ -4,6 +4,9 @@ HTML significa Linguagem de Marcação de Hipertexto. Ele é usado no frontend e
 
 É uma linguagem de marcação que define a estrutura do seu conteúdo. Consiste em uma série de elementos que você usa para mostrar algo de uma determinada maneira ou agir de uma certo modo. As tags podem criar um hiperlink de uma palavra ou imagem para outro lugar, podem colocar palavras em itálico, podem aumentar ou diminuir a fonte e assim por diante.
 
+## Projetos
+- [Bear Bears - site simples](https://userdajheni.github.io/estudos-html/projetos/projeto1/main.html)
+
 ## Referência
 
 :diamond_shape_with_a_dot_inside: [Tech Guide: front-end](https://techguide.sh/pt-BR/path/front-end/html-fundamentals/)

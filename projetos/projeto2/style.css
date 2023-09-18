@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /* visualização em grade responsiva */
+}
+
+body {
+    background-color: #f9f4e8;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #605f5d;
+    background-color: #f9f4e8;
+}
+
+/* cabeçalho */
+header {
+    background-color: #f9f4e8;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 25px 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    gap: 10px;
+    display: flex;
+}
+
+.logo span {
+    padding: 5px 10px;
+    color: white;
+    font-size: 10px;
+    border-radius: 100px;
+    background: rgb(232,174,81);
+    background: linear-gradient(158deg, rgba(232,174,81,1) 28%, rgba(233,88,113,1) 56%);  
+}
+
+.nav-list ul {
+    gap: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #605f5d;
+    text-decoration: none;
+}
+
+.btn {
+    gap: 20px;
+    display: flex;
+}
+
+.btn button:nth-child(2) {
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #4977ea;
+}
+
+/* esconde o icone menu hamburguer e os links no desktop */
+.mobile-menu-icon, .mobile-menu {
+    display: none; 
+}
+
+/* fazer o menu mobile aparecer quando a tela ficar menor que 915px */
+@media screen and (max-width: 915px) {
+    /* esconder menu desktop */
+    .nav-list, .btn {
+        display: none;
+    }
+
+    /* aparecer menu mobile */
+    .mobile-menu-icon {
+        display: block; 
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .mobile-menu-icon {
+        font-size: 20px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Quando essa classe for acionada pelo js os links mobile aparecerá */
+    .open {
+        display: block;
+    }
+}
+
+/* conteúdo pricipal */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    padding: 150px 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.banner img {
+    max-width: 200px;
+    position: absolute;
+}
+
+.blue { transform: rotate(-50deg);}
+.pink { transform: rotate(-35deg);}
+.purple { transform: rotate(-15deg);}
+
+section {
+    gap: 15px;
+    display: flex;
+    padding: 0 25px;
+    flex-direction: column;
+}
+
+section h1 {
+    font-size: 46px;
+    font-family: 'Playfair Display';
+}
+
+section p {
+    font-size: 14px;
+    color: #605f5d;
+}
+
+form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input:nth-child(2) {
+    color: white;
+    background-color: #4977ea;
+}
+
+section div {
+    gap: 15px;
+    display: flex;
+    color: #605f5d;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+}
+
+.social {
+    gap: 20px;
+    display: flex;
+    margin: 50px 0;
+    flex-direction: column;
+}
+
+.social ul {
+    gap: 20px;
+    display: flex;
+    color: #605f5d;
+    list-style: none;
+}
+
+.perfil {
+    gap: 20px;
+    display: flex;
+}
+
+.perfil h2, .perfil h3 {
+    font-size: 18px;
+    font-family: 'Playfair Display';
+}
+
+.perfil h2 {
+    font-weight: normal;
+}
+
+/* responsividade */
+@media screen and (min-width: 750px) {
+    .banner img {
+        max-width: 250px;
+    }
+
+    section h1 {
+        font-size: 55px;
+    }
+
+    form {
+        flex-direction: row;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 916px) {
+    .banner img {
+        max-width: 350px;
+    }
+
+    main {
+        padding: 160px 0;
+    }
+    .content {
+        gap: 300px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section {
+        width: 700px;
+    }
+
+    section h1 {
+        font-size: 68px;
+    }
+}

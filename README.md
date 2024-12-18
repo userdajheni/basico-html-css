@@ -23,5 +23,3 @@ HTML significa Linguagem de Marcação de Hipertexto. Ele é usado no frontend e
 :diamond_shape_with_a_dot_inside: [Curso em vídeo - Módulo 3](https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/)
 
 :diamond_shape_with_a_dot_inside: [Curso em vídeo - Módulo 4](https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/)
-
-:diamond_shape_with_a_dot_inside: [Jeferson Lordano](jetersonlordano.com.br)

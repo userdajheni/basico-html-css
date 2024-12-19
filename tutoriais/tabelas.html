@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <p>table: Define o início da tabela.</p>
+    <p>tr: Representa uma linha da tabela.</p>
+    <p>th: Indica uma célula de cabeçalho, geralmente exibida em negrito e centralizada.</p>
+    <p>td:  Representa uma célula de dados.</p>
+
+    <h2>Atributos para estilizar com css</h2>
+    <p>border: Define a largura, estilo e cor das bordas da tabela e de suas células.</p>
+    <p>border-collapse: Controla o comportamento das bordas adjacentes.</p>
+    <p>border-spacing: Define o espaço entre as células da tabela.</p>
+
+    <br><hr><br>
+
+    <h2>exemplo 1</h2>
+    <table>
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+        </tr>
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+        </tr>
+        <tr>
+            <td>Valor 4</td>
+            <td>Valor 5</td>
+            <td>Valor 6</td>
+        </tr>
+    </table>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+
+    <br><hr><br>
+    
+    <h2>exemplo 2</h2>
+    <table class="ex2">
+        <tr class="ex2">
+            <th class="ex2">Cabeçalho 1</th>
+            <th class="ex2">Cabeçalho 2</th>
+            <th class="ex2">Cabeçalho 3</th>
+        </tr>
+        <tr class="ex2">
+            <td class="ex2">Valor 1</td>
+            <td class="ex2">Valor 2</td>
+            <td class="ex2">Valor 3</td>
+        </tr>
+        <tr class="ex2">
+            <td class="ex2">Valor 4</td>
+            <td class="ex2">Valor 5</td>
+            <td class="ex2">Valor 6</td>
+        </tr>
+    </table>
+
+    <style>
+        table.ex2 {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f9f9f9;
+        }
+
+        th.ex2, td.ex2 {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th.ex2 {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <br><hr><br>
+
+    <h2>Tabela Zebra</h2>
+    <table class="ex3">
+        <tr class="ex3">
+            <th class="ex3">First Name</th>
+            <th class="ex3">Last Name</th>
+            <th class="ex3">Points</th>
+        </tr>
+        <tr class="ex3">
+            <td class="ex3">Peter</td>
+            <td class="ex3">Griffin</td>
+            <td class="ex3">$100</td>
+        </tr>
+        <tr class="ex3">
+            <td class="ex3">Lois</td>
+            <td class="ex3">Griffin</td>
+            <td class="ex3">$150</td>
+        </tr>
+        <tr class="ex3">
+            <td class="ex3">Joe</td>
+            <td class="ex3">Swanson</td>
+            <td class="ex3">$300</td>
+        </tr>
+        <tr class="ex3">
+            <td class="ex3">Cleveland</td>
+            <td class="ex3">Brown</td>
+            <td class="ex3">$250</td>
+        </tr>
+      </table>
+
+      <style>
+        table.ex3 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            th.ex3, td.ex3 {
+            text-align: left;
+            padding: 8px;
+        }
+
+            tr.ex3:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+      </style>
+
+      <br><hr><br>
+
+      <h2>Tabela Vertical Zebra </h2>
+      <style>
+            table.ex4, th.ex4, td.ex4 {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            
+            th.ex4:nth-child(even),td.ex4:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+        </style>
+        
+        <table class="ex4" style="width:100%">
+          <tr class="ex4" >
+            <th class="ex4" >MON</th>
+            <th class="ex4" >TUE</th>
+            <th class="ex4" >WED</th>
+            <th class="ex4" >THU</th>
+            <th class="ex4" >FRI</th>
+            <th class="ex4" >SAT</th>
+            <th class="ex4" >SUN</th>
+          </tr>
+          <tr>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+          </tr>
+          <tr class="ex4" >
+            <td class="ex4"  class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+          </tr>
+          <tr class="ex4" >
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+          </tr>
+          <tr  class="ex4" >
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+            <td class="ex4" > </td>
+          </tr>
+        </table>
+    
+        <br><hr><br>
+    <h1>combinar Vertical and Horizontal Zebra</h1>
+    <style>
+        table.ex5, th.ex5, td.ex5 {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        
+        tr.ex5:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+        
+        th.ex5:nth-child(even),td.ex5:nth-child(even) {
+          background-color: rgba(150, 212, 212, 0.4);
+        }
+        </style>
+        <table style="width:100%">
+            <tr class="ex5">
+              <th class="ex5">MON</th>
+              <th class="ex5">TUE</th>
+              <th class="ex5">WED</th>
+              <th class="ex5">THU</th>
+              <th class="ex5">FRI</th>
+              <th class="ex5">SAT</th>
+              <th class="ex5">SUN</th>
+            </tr>
+            <tr class="ex5">
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+            </tr>
+            <tr class="ex5">
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+            </tr>
+            <tr class="ex5">
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+            </tr>
+            <tr class="ex5">
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+              <td class="ex5"> </td>
+            </tr>
+          </table>
+    <br><hr><br>
+
+    <h2>divisores Horizontal</h2>
+    <style>
+        table.ex6 {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        tr.ex6 {
+          border-bottom: 1px solid #ddd;
+        }
+        </style>
+        <table class="ex6">
+            <tr class="ex6">
+              <th class="ex6">Firstname</th>
+              <th class="ex6">Lastname</th>
+            <th class="ex6">Savings</th>
+            </tr>
+            <tr class="ex6">
+              <td class="ex6">Peter</td>
+              <td class="ex6">Griffin</td>
+              <td class="ex6">$100</td>
+            </tr>
+            <tr class="ex6">
+              <td class="ex6">Lois</td>
+              <td class="ex6">Griffin</td>
+              <td class="ex6">$150</td>
+            </tr>
+            <tr class="ex6">
+              <td class="ex6">Joe</td>
+              <td class="ex6">Swanson</td>
+              <td class="ex6">$300</td>
+            </tr>
+            <tr class="ex6">
+              <td class="ex6">Cleveland</td>
+              <td class="ex6">Brown</td>
+              <td class="ex6">$250</td>
+            </tr>
+          </table>
+</body>
+</html>

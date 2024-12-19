@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        div.ex01 {
+            background-color: #FFF4A3;
+            padding: 10px;
+        }
+
+        div.ex02 {
+            background-color: tomato;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto; /* Garante que, se o conteúdo dentro do contêiner ultrapassar o limite (horizontal ou vertical), será possível rolar a visualização (barras de rolagem aparecem, se necessário).*/
+        }
+
+        /* estilos para as divs que estão dentro da div que tem class container */
+        .container div {
+            width: 33%;
+            float: left;
+        }
+
+        div.ex03 {
+            width: 30%;
+            display: inline-block;
+        }
+
+        div.ex04 {
+            display: flex;
+        }
+
+        div.ex04 > div {
+            width: 33%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 47% 28%;
+        }
+    </style>
+</head>
+<body>
+    <p>A div é usada como um contêiner para outros elementos HTML. É elemento de bloco, o que significa que leva toda a largura disponível, e vem com linha pausas antes e depois.</p>
+
+    <section>
+        <h1>exemplo de div como container para outros elementos</h1>
+
+        <div class="ex01">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div> 
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>centralizando uma div</h1>
+        <p>Para isso use width: o tamanho que quer e margin como auto</p>
+
+        <div class="ex02">
+            eu sou uma div centralizada
+        </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>várias divs juntas</h1>
+        <div style="background-color:aquamarine;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div style="background-color:cornflowerblue;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div style="background-color: crimson;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div> 
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>várias divs juntas mas lado a lado</h1>
+        <p>A propriedade <b>float</b> é usada para posicionamento e formatação de conteúdo e Permitir que os elementos flutuem um ao lado do outro em vez de em cima uns dos outros.</p>
+        
+        <div class="container">
+            <div style="background-color:aquamarine;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+              </div>
+              
+              <div style="background-color:cornflowerblue;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+              </div>
+              
+              <div style="background-color: crimson;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+              </div>
+        </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>Div com displey inline-block</h1>
+        <p>Se você alterar a propriedade de exibição do elemento div de block para inline-block, os elementos div não adicionarão mais uma quebra de linha antes e depois e serão exibidos lado a lado, em vez de um sobre o outro.</p>
+        <div class="ex03" style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div class="ex03" style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div class="ex03" style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>display: flex</h1>
+        <p>O Módulo de Layout Flexbox do CSS foi introduzido para facilitar o design de estruturas de layout flexíveis e responsivas, sem a necessidade de usar float ou posicionamento.</p>
+
+        <p>Para que o método flex do CSS funcione, envolva os elementos div com outro elemento div e atribua a ele o status de contêiner flexível (flex container).</p>
+
+        <div class="ex04">
+
+            <div style="background-color:#FFF4A3;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million.</p>
+            </div>
+          </div>
+    </section>
+
+    <br><hr><br>
+
+    <section>
+        <h1>Grid</h1>
+        <p>O Módulo de Layout em Grid do CSS oferece um sistema de layout baseado em grades, com linhas e colunas, facilitando o design de páginas da web sem a necessidade de usar `float` e posicionamento.</p>
+
+        <p>Parece quase o mesmo que o flex, mas tem a capacidade de definir mais de uma linha e posicionar cada linha individualmente.</p>
+
+        <p>O método de grade do CSS exige que você envolva os elementos `div` com outro elemento `div`, atribua a ele o status de contêiner de grade (grid container) e especifique a largura de cada coluna."</p>
+
+        <div class="grid-container">
+            <div style="background-color:#FFF4A3;">
+                <h2>25%</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+              </div>
+              
+              <div style="background-color:#FFC0C7;">
+                <h2>47%</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+              </div>
+              
+              <div style="background-color:#D9EEE1;">
+                <h2>28%</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+              </div>
+        </div>
+    </section>
+</body>
+</html>

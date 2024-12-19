@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site responsivo</title>
+    <!-- estilo css -->
+     <style>
+        /* site para gerar grid: https://layout.bradwoods.io/customize */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            gap: 8px;
+            display: grid;
+
+            grid: 
+                "header header header" auto
+                "nav section aside" 1fr
+                "footer footer footer" auto
+                / 20% 60% 20%
+            ;
+        }
+
+        .header { grid-area: header; }
+        .nav { grid-area: nav; }
+        .section { grid-area: section; }
+        .aside { grid-area: aside; }
+        .footer { grid-area: footer; }
+
+
+        header {
+            padding:15px;
+            background-color:#f1f1f1;
+        }
+
+        nav {
+            background-color: antiquewhite;
+        }
+
+        nav ul {
+            list-style: none;        
+        }
+
+        nav li {
+            padding: 8px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgb(255, 251, 250);
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        aside {
+            padding: 10px 15px;
+            background-color: lightblue;
+        }
+
+        footer {
+            background-color:#f1f1f1;
+            text-align:center;
+            padding:10px;
+            margin-top:7px;
+            font-size:12px;
+        }  
+
+        /* MODO RESPONSIVO */
+        /* 
+            telas com largura de até 768px ficarão um abaixo do outro
+            maior que isso fica igual desktop
+        */
+        @media (max-width: 768px) {
+            body {
+                grid-template-areas:
+                "header"
+                "nav"
+                "section"
+                "aside"
+                "footer";
+                grid-template-columns: 1fr; /* Coloca todos os elementos em uma única coluna */
+            }
+        }
+     </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Cinque Terre</h1>
+        <h3>Resize the browser window</h3>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li>The Walk</li>
+            <li>Transport</li>
+            <li>History</li>
+            <li>Gallery</li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2>The Walk</h2>
+        <p>
+            The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.
+        </p>
+        <img src="images/beira-mar-praia.jpg" alt="praia">
+    </section>
+
+    <aside class="aside">
+        <h2>What?</h2>
+        <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    
+        <h2>Where?</h2>
+        <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    
+        <h2>Price?</h2>
+        <p>The Walk is free!</p>
+    </aside>
+
+    <footer class="footer">
+        <p>This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</p>
+    </footer>
+</body>
+</html>

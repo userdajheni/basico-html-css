@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+div.center {
+    align-content: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* 
+    isso é um comentário
+*/
+
+/* Centralizar a .center-div */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /*Altura total da janela*/
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente as img-bg */
+    align-items: center; /* Centraliza verticalmente as img-bg */
+    width: 300vw; /* Define a largura da .center-div */
+    height: 70vh; /* Define a altura da .center-div */
+}
+
+/* Estilizar as divs img-bg */
+.img-bg {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 70vh;
+    margin: 10px; /* Espaçamento entre as divs */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Usar pseudo-classes para diferentes backgrounds */
+.img-bg:nth-child(1) {
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-image: url(../ex02/beira-mar-praia.jpg);
+}
+
+.img-bg:nth-child(2) {
+    background-attachment:local;
+    background-clip: content-box;
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(beira-mar-praia.jpg);
+}
+
+.img-bg:nth-child(3) {
+    background-attachment:scroll;
+    background-clip:padding-box;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position:left;
+    background-image: url(beira-mar-praia.jpg);
+}
+
+.img-bg:nth-child(4) {
+    background-attachment:fixed;
+    background-clip:border-box;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: right;
+    background-image: url(beira-mar-praia.jpg);
+}
+
+.img-bg:nth-child(5) {
+    background-attachment:scroll;
+    background-clip:content-box;
+    background-size: contain;
+    background-repeat: round;
+    background-position: top;
+    background-image: url(beira-mar-praia.jpg);
+}

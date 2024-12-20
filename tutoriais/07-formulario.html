@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="">
+        <label for="button">input tipo button (b ou btn ou button)</label>
+        <input type="button" value="botão">
+
+        <br><br>
+
+        <label for="checkbox">input tipo checkbox ou c</label>
+        <input type="checkbox" name="" id="">
+
+        <br><br>
+
+        <label for="color">input color</label>
+        <input type="color" name="" id="">
+
+        <br><br>
+
+        <label for="date">input tipo date</label>
+        <input type="date" name="" id="">
+
+        <br><br>
+
+        <label for="datetime">input tipo datetime</label>
+        <input type="datetime" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo datetime-local</label>
+        <input type="datetime-local" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo email</label>
+        <input type="email" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo file ou f:</label> <br>
+        <input type="file" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo hidden</label>
+        <input type="hidden" name="">
+
+        <br><br>
+
+        <label for="">input tipo image (colocar link da img no src)</label>
+        <input type="image" src="images/beira-mar-praia.jpg" alt="" width="100px">
+
+        <br><br>
+
+        <label for="">input tipo month</label>
+        <input type="month" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo number</label>
+        <input type="number" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo password ou p</label>
+        <input type="password" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo radio ou r</label>
+        <input type="radio" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo range</label>
+        <input type="range" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo reset</label>
+        <input type="reset" value="">
+
+        <br><br>
+
+        <label for="">input tipo search</label>
+        <input type="search" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo submit</label>
+        <input type="submit" value="submit">
+
+        <br><br>
+
+        <label for="">input tipo tel</label>
+        <input type="tel" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo text</label>
+        <input type="text" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo time</label>
+        <input type="time" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo url</label>
+        <input type="url" name="" id="">
+
+        <br><br>
+
+        <label for="">input tipo week</label>
+        <input type="week" name="" id="">
+    </form>
+
+    <br><hr><br>
+
+    <h2>Atributos do formulário</h2>
+    <p>
+        O atributo <b>action</b> define a ação a ser executada quando o formulário é submetido (enviado). Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar.
+    </p>
+
+    <p>No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado "action_page.php". Este arquivo contém um script do lado do servidor que manipula os dados do formulário:</p>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John">
+
+        <br><br>
+
+        <label for="lname">Last name:</label>
+
+        <br>
+
+        <input type="text" id="lname" name="lname" value="Doe">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form> 
+
+    <br><br>
+
+    <p>
+        O atributo <b>target</b> especifica onde Exibir a resposta recebida após a apresentação do formulário. Ele pode conter os seguintes valores:
+    </p>
+
+    <ul>
+        <li>_blank A resposta é exibida em uma nova janela ou guia</li>
+        <li>_self A resposta é exibida na janela atual</li>
+        <li>_parent A resposta é exibida no quadro pai</li>
+        <li>_top A resposta é exibida em todo o corpo da janela</li>
+        <li>framename A resposta é exibida em um iframe nomeado</li>
+    </ul>
+
+    <br>
+
+    <p>
+        O atributo <b>method</b> especifica o método HTTP a ser usado ao enviar os dados do formulário. Os dados de formulário podem ser enviados como variáveis de URL com method="<b>get</b>" ou com method="<b>post</b>"
+    </p>
+
+    <br>
+
+    <p>
+        O atributo <b>autocomplete</b> " quando está ativado, o navegador completa automaticamente os valores com base nos valores que o usuário inseriu antes.
+    </p>
+
+    <br><hr><br>
+
+    <h2>Elementos do Formulário</h2>
+    <ol>
+        <li>input</li>
+        <label>É usado para criar campos interativos no formulário para entrada de dados.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>type: Define o tipo do campo de entrada, como texto, senha, número, data, etc.</li>
+                <li>name: Define o nome do campo para identificação no envio do formulário.</li>
+                <li>value: Define o valor inicial do campo.</li>
+                <li>Exemplos de tipos comuns: text, password, email, number, checkbox, radio.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>label</li>
+        <label>Associa um texto explicativo a um elemento de formulário, como um campo de entrada.</label>
+        <ul>
+            <li><b>Atributo principal:</b></li>
+            <ul>
+                <li>for: Associa o rótulo a um elemento de formulário usando o id desse elemento.</li>
+                <li>Benefício: Melhora a acessibilidade para leitores de tela e a usabilidade ao clicar no rótulo.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>select</li>
+        <label>Cria uma lista suspensa (dropdown) para selecionar uma ou mais opções.</label> <br>
+        <label>Associado a: < option > para definir as opções.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>name: Nome do campo no formulário.</li>
+                <li>multiple: Permite a seleção de múltiplas opções.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>textarea</li>
+        <label>Cria um campo de entrada para texto longo (múltiplas linhas).</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>rows e cols: Controlam a altura e largura do campo.</li>
+                <li>name: Nome do campo no formulário.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>button</li>
+        <label>Representa um botão clicável.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>type: Define o tipo de botão (submit, reset, ou apenas button).</li>
+                <li>onclick: Especifica um evento JavaScript a ser executado quando clicado.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>fieldset</li>
+        <label>Agrupa elementos relacionados de um formulário para organização visual e lógica.</label>
+        <ul>
+            <li><b>Associado a: Geralmente usado com < legend >.</b></li>
+        </ul>
+
+        <br><br>
+
+        <li>legend</li>
+        <label>Define uma legenda para o < fieldset >, explicando o propósito dos elementos agrupados.</label>
+
+        <br><br>
+
+        <li>datalist</li>
+        <label>Define uma lista de opções pré-definidas para campos de entrada (< input >), como sugestões.</label>
+        <ul>
+            <li><b>Associado a: Atributo list no < input >.</b></li>
+        </ul>
+
+        <br><br>
+
+        <li>output</li>
+        <label>Representa um resultado de cálculo ou uma saída gerada dinamicamente.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>for: Associa o elemento a um ou mais elementos de formulário pelo id.</li>
+                <li>name: Nome para identificar o elemento no formulário.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>option</li>
+        <label>Define cada item de uma lista suspensa criada pelo < select >.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>value: Valor enviado ao servidor quando a opção é selecionada.</li>
+                <li>selected: Define uma opção como selecionada por padrão.</li>
+            </ul>
+        </ul>
+
+        <br><br>
+
+        <li>optgroup</li>
+        <label>Agrupa opções dentro de um < select > para facilitar a organização.</label>
+        <ul>
+            <li><b>Atributos principais:</b></li>
+            <ul>
+                <li>label: Nome do grupo de opções.</li>
+            </ul>
+        </ul>
+    </ol>
+</body>
+</html>

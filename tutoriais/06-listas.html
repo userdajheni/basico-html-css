@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        ul.menu {
+            list-style-type: none; /* tira as bolinhas */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.menu li {
+            float: left; /* coloca um do lado do outro */
+        }
+
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTATO</a></li>
+    </ul>
+
+    <h1>Listas</h1>
+    <p>As listas de HTML permitem que os desenvolvedores da Web agrupem um conjunto de itens relacionados em listas.</p>
+
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+    </ul>
+
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+        <li>Itens</li>
+    </ol>
+
+    <h2>Listas de descrição</h2>
+    <dl>
+        <dt>Coffe</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <p>
+        Aqui usamos: <br>
+        dl -- define a lista de descrição <br>
+        dt -- para definir o termo / nome <br>
+        dd -- descreve cada termo
+    </p>
+
+    <h2>Marcadores da lista não ordenada</h2>
+    <ul style="list-style-type: armenian;">
+        <li>armenian</li>
+        <li>armenian</li>
+        <li>armenian</li>
+        <li>armenian</li>
+        <li>armenian</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>circle</li>
+        <li>circle</li>
+        <li>circle</li>
+    </ul>
+
+    <ul style="list-style-type:decimal;">
+        <li>decimal</li>
+        <li>decimal</li>
+        <li>decimal</li>
+    </ul>
+
+    <ul style="list-style-type:decimal-leading-zero;">
+        <li>decimal-leading-zero</li>
+        <li>decimal-leading-zero</li>
+        <li>decimal-leading-zero</li>
+    </ul>
+
+    <ul style="list-style-type:disc;">
+        <li>disc</li>
+        <li>disc</li>
+        <li>disc</li>
+    </ul>
+
+    <ul style="list-style-type:georgian;">
+        <li>georgian</li>
+        <li>georgian</li>
+        <li>georgian</li>
+    </ul>
+
+    <ul style="list-style-type:square;">
+        <li>square</li>
+        <li>square</li>
+        <li>square</li>
+    </ul>
+
+    <ul style="list-style-type:lower-alpha;">
+        <li>lower-alpha</li>
+        <li>lower-alpha</li>
+        <li>lower-alpha</li>
+    </ul>
+
+    <ul style="list-style-type:lower-greek;">
+        <li>lower-greek</li>
+        <li>lower-greek</li>
+        <li>lower-greek</li>
+    </ul>
+
+    <ul style="list-style-type:lower-latin;">
+        <li>lower-latin</li>
+        <li>lower-latin</li>
+        <li>lower-latin</li>
+    </ul>
+
+    <ul style="list-style-type:lower-roman;">
+        <li>ower-roma</li>
+        <li>ower-roma</li>
+        <li>ower-roma</li>
+    </ul>
+
+    <ul style="list-style-type:none;">
+        <li>none</li>
+        <li>none</li>
+        <li>none</li>
+    </ul>
+
+    <h2>Lista encomendada</h2>
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <h2>Contagem de Lista</h2>
+    <p>usamos o <b>start</b> para determinar por qual numero a lista começa</p>
+    <ol start="48">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+</body>
+</html>

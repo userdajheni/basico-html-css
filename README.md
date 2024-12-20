@@ -1,4 +1,4 @@
-# :technologist: Estudos sobre HTML
+# :technologist: Estudos sobre HTML & CSS
 
 HTML significa Linguagem de Marcação de Hipertexto. Ele é usado no frontend e fornece a estrutura da página da web que você pode estilizar usando CSS e tornar interativa usando JavaScript.
 

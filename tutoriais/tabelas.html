@@ -261,15 +261,21 @@
           </table>
     <br><hr><br>
 
-    <h2>divisores Horizontal</h2>
+    <h2>Hoverable Table</h2>
     <style>
         table.ex6 {
           border-collapse: collapse;
           width: 100%;
         }
         
-        tr.ex6 {
+        th.ex6, td.ex6 {
+          padding: 8px;
+          text-align: left;
           border-bottom: 1px solid #ddd;
+        }
+
+        tr.ex6:hover {
+          background-color: #D6EEEE;
         }
         </style>
         <table class="ex6">
